@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="slider/skdslider.css" rel="stylesheet">
+    <link href="slider/slick/slick/slick.css" rel="stylesheet">
+    <link href="slider/slick/slick/slick-theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <style type="text/css">
+      .slick-slide {
+         margin: 0;
+        }
+      .demo2 .slick-slide{
+        margin: 15px;
+      }
+      .slick-slide img {
+         width: 100%;
+       }
+       .slick-prev{
+         left: 25px;
+         z-index:1;
+       }
+       .slick-next{
+         right: 57px;
+         z-index: 1;
+       }
+       .slick-prev:before,
+       .slick-next:before {
+         color: white;
+         font-size: 50px;
+       }
+
+
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="scrypt.js"></script>
+    <script type="text/javascript" src="slider/skdslider.js"></script>
+    <script type="text/javascript" src="slider/slick/slick/slick.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=277c20d4-c845-4acd-a2b3-c1fa0a09bc5a&lang=ru_RU" type="text/javascript"></script>
+    <!--<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#demo').skdslider({
+          slideSelector: '.slide',
+          delay:5000,
+          animationSpeed: 300,
+          showNextPrev:false,
+          showPlayButton:false,
+          autoSlide:true,
+          animationType:'sliding',
+          });
+        });
+    </script>-->
+
+  </head>
+  <body>
+
+    <div class="container-fluid content" style=" padding: 0;">
+       <div class="row" style=" margin: 0;">
+          <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 visible-sm visible-xs mobil_menu">
+            <img src="img/logo.png">
+            <button class="m_menu_button" type="button"><i class="menu-toggle__icon material-icons"></i></button>
+            <ul class="msubmenu">
+              <li class="mmenu_item"><a href="#">О КОМПАНИИ</a> </li>
+              <li class="mmenu_item"><a href="#">ПРОДУКЦИЯ</a></li>
+              <li class="mmenu_item"><a href="#">ВАКАНСИИ</a></li>
+              <li class="mmenu_item"><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+            <div class="col-lg-12 col-md-12 visible-lg visible-md" style=" padding: 0;">
+              <div id="demo">
+                 <div class="slide_1"></div>
+                 <div class="slide_2"></div>
+                 <div class="slide_3"></div>
+              </div>
+              </div>
+              <div class="col-sm-12 col-xs-12 visible-sm visible-xs" style=" padding: 0;">
+                <div id="mob_demo">
+                   <div class="mobslide_1"></div>
+                   <div class="mobslide_2"></div>
+                   <div class="mobslide_3"></div>
+                </div>
+                </div>
+              <div class="top_menu">
+                  <nav>
+                    <a href="#">О КОМПАНИИ</a>
+                    <a href="#">ПРОДУКЦИЯ</a>
+                    <a href="#">ВАКАНСИИ</a>
+                    <a href="#">КОНТАКТЫ</a>
+                  </nav>
+              </div>
+              <div class="desk_menu">
+                  <div class="nav">
+                    <img src="img/logo.png">
+                      <nav>
+                        <a href="#">О КОМПАНИИ</a>
+                       <a href="#">ПРОДУКЦИЯ</a>
+                       <a href="#">ВАКАНСИИ</a>
+                        <a href="#">КОНТАКТЫ</a>
+                      </nav>
+                  </div>
+              </div>
+            <!--  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 mid_content" style="padding: 0;">
+                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 image_pro">
+                       <img src="img/U10.png">
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       <h3 id="headline">Всё, что вы можете представить, можно воплотить в реальность</h3>
+                       <p class="text_cont">АО "НПК Пеленгатор" - это современный научно производственный комплекс,
+                       распологающий серьёзной научной и инженерными базами, собственной производственной
+                     площадкой.</p>
+                     <p class="text_cont">Компания реализует разработки новейших оптико-электронных систем с самыми современными
+                     програмными и аппаратными компонентами.</p>
+                     <h5>Направления деятельности:</h5>
+                     <ul class="enum">
+                       <li>Разработка, производство, внедрение и сопровождение оптикоэлектронных систем.</li>
+                       <li>Разработка, производство, внедрение и сопровождение автоматизированных систем.</li>
+                       <li>Разработка, производство, внедрение и сопровождение радиотехнических  систем.</li>
+                     </ul>
+                     <p class="text_cont">Постоянно развивается научно-производственная база.</p>
+                     <p class="text_cont">На предприятии трудятся высококласные специалисты.</p>
+                   </div>
+              </div>-->
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts">
+                 <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 contacts_text">
+                    <h3 id="top_cont">Контакты</h3>
+                   <p>Юридический и фактический адрес:<br><br>
+                      198095, Санкт-Петербург <br>
+                      ул.Ивана Черных, дом 31-33</p>
+                      <h3>Приемная</h3>
+                      <p> Тел. +7(812)578-53-28<br>
+                          Электронная почта:<br>
+                          info@npk-pelengator.ru</p>
+                      <h3>Отдел персонала</h3>
+                      <p>Тел. +7(812) 578-53-28, доб. 169 <br>
+                      personal@npk-pelengator.ru</p>
+                 </div>
+                 <div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 contacts_map">
+                    <div id="map" style="width: 100%; height: 500px"></div>
+                 </div>
+              </div>
+              <script type="text/javascript">
+                ymaps.ready(init);
+                function init(){
+                    var myMap = new ymaps.Map("map", {
+                        center: [59.902253, 30.285280],
+                        zoom: 15
+                    });
+                    var myGeoObject = new ymaps.GeoObject({
+                      geometry: {
+                          type: "Point",
+                          coordinates: [59.902253, 30.285280]
+                      }
+                  });
+                  myMap.geoObjects.add(myGeoObject);
+                }
+            </script>
+            <div class="link_about">
+
+            </div>
+              <!--<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 work">
+                 <h2>Работа на предприятии</h2>
+                 <p>АО «НПК Пеленгатор» –современное стабильно предприятие, основной ценностью которого являются его сотрудники.
+                     Кадровая политика предприятия направлена на сохранение и развитие потенциала сотрудников,
+                     создание квалифицированного и сплочённого коллектива, ориентированного на результат.
+                   <p>Одна из приоритетных задач - работа по привлечению молодых специалистов – учащихся и выпускников высших и средних специальных учебных заведений.</p>
+                   <p>Студенты проходят на Предприятии производственную и преддипломную практику под руководством квалифицированных специалистов.</p>
+                  <p>После успешного прохождения практики многие остаются уже в качестве специалистов на предприятии.</p>
+                  <p>У АО «НПК Пеленгатор» заключены договоры о сотрудничестве  с: <br><br>
+                  Санкт-Петербургским государственным университетом; <br><br>
+                Санкт-Петербургским государственным электротехническим университетом  «ЛЭТИ» имени В. И. Ульянова (Ленина) (СПбГЭТУ «ЛЭТИ»);<br><br>
+              Новгородским государственным университетом им. Ярослава Мудрого;<br><br>
+            Политехническим колледжом г. Великий Новгород.<br><br>
+          Сотрудники предприятия имеют возможность повысить свою квалификацию на специализированных семинарах, курсах.<br></p>
+          <p id="p_slog">На нашем Предприятии Вы в полной мере сможете применить свои профессиональные знания и умения!</p>
+          <h3>Нам требуются специалисты:</h3>
+          <p class="p_loc">В Санкт-Петербурге</p>
+          <ul>
+            <li>Заместитель начальника планово-экономического отдела; </li>
+            <li>Ведущий инженер-конструктор (разработка несущих конструкций, крепежных элементов);</li>
+            <li>Инженер-технолог по механической обработке и сборке;</li>
+            <li>Инженер-технолог (печатные платы);</li>
+          </ul>
+          <p class="p_loc">В обособленном подразделении «Великий Новгород»</p>
+          <ul>
+            <li>Ведущий инженер (разработка электрических схем на платы, разработка функционального программного обеспечения для них);</li>
+            <li>Ведущий инженер-программист (разработка функционального программного обеспечения);</li>
+            <li>Инженер –программист (С++, разработка программного обеспечения):</li>
+            <li>Инженер 1 категории (разработка электрических схем);</li>
+            <li>Инженер-технолог (монтаж, электромонтаж);</li>
+            <li>Технический писатель (разработка технической документации, направление -   оптико-электронные системы);</li>
+          </ul>
+          <p class="work_ask">По вопросам трудоустройства обращайтесь по телефону +7(812)578532, доб. 169 или высылайте резюме по электронной почте на адрес  <span>personal@npk-pelengator.ru</span></p>
+        </div>-->
+            <!--  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 products_info">
+                   <h2>Продукция и услуги предприятия.</h2>
+                   <h3>Медицина</h3>
+                   <p>Цифровая копия полости рта или цифровой оттиск зубов, который мы получаем с помощью
+                   ,разработанной нашим предприятием, интраоральной камеры, которая менее чем за 2,5 минуты с
+                 высочайшей точностью сканирует поверхности зуба или зубов и проэцирует изображение на сенсорный
+               экран. Система сканирования полости рта, применяемая при всех видах стоматологических реставраций:
+             мостовидные протезы, коронки, вкладки, виниры и т.п.</p>
+             <p>Цифровая копия фигуры человека, позволяет изготовить точные протезы конечностей человека,
+             отправив по электронной почте цифровую копию протеза прямо в лабораторию.</p><br><br>
+             <h3>Промышленность и строительство:</h3>
+             <p> Обследование и аэрофотосъёмка ЛЭП, мачт и линий электропередачи с воздуха,
+                съёмка новых маршрутов линий электропередач и прилегающей территории и создание цифровой модели рельефа,
+                 проектирование маршрутов новых ЛЭП с использованием имеющихся опор ЛЭП и новых моделей проводящих материалов,
+                 анализ повреждений, аварий ЛЭП.
+             </p>
+             <p>Аэрофотосъёмка местности на этапе подготовки проекта строительства,
+                   оценка степени готовности объекта, оценка и контроль работ
+                 </p>
+                 <h3>МЧС</h3>
+                 <p>Борьба с пожарами и прогноз их распространения,
+                    в том числе расчета индексов содержания «сухого» углерода в виде лигнина или
+                    целлюлозы – PSRI (Plant Senescence Reflectance Index),
+                     который применяется при оценке пожароопасности территории.</p>
+                     <p>Контроль паводковой ледовой обстановки.</p>
+                     <p>Изучение динамики снежного покрова.</p>
+                      <p>Gоиск пропавших людей в природной среде, в том числе в местности, густо покрытой лесами.</p>
+                      <h3>Фермерство</h3>
+                      <ul>
+                        <li>Регулярная и объективная оценка состояния посевов и урожайности,</li>
+                        <li>Дистанционное измерение влажности почвы</li>
+                        <li>Оценка показателей и динамики опустынивания и деградации почвенного покрова</li>
+                        <li>Оценка качества осушительной мелиорации</li>
+                        <li>Выявление и контроль развития эрозионных процессов и разработка противоэрозионных мероприятий</li>
+                        <li>Определение температуры верхнего слоя почвы</li>
+                        <li>Оценка готовности угодий к посевному сезону/li>
+                        <li>Спектральный анализ почв для расчета основных вегетационных индексов и оценки роста,
+                           продуктивности и урожайности, в том числе NDVI (Normalized Difference Vegetation Index),
+                            индекс содержания азота в растительном покрове - NDNI (Normalized Difference Nitrogen Index)
+                           </li>
+                           <li>Выявление очагов поражения зерновых культур (наводнения, ливни, ураганы, град, засуха, пожары)</li>
+                           <li>Динамика сенокосных работ и оценка площади скошенных сенокосных угодий.</li>
+                      </ul>
+                      <h3>Экологическая безопасность</h3>
+                      <p>Наши системы отслеживают экологическую обстановку в местах скопления промышленных объектов,
+                         контролируют вредные выбросы в атмосферу.</p>
+                         <p>Геохимическая съемка приповерхностных слоев атмосферы и обнаружение вредных микроэлементов
+                            и/или их соединений, концентрирующихся над современными активными геоэкологическими объектами:
+                             крупными промышленными объектами и населенными пунктами</p>
+                        <p>Оценка состояния лесов, в том числе предотвращения незаконной вырубки леса,
+                           иной незаконной деятельности: площадей для выращивание растений, используемых для изготовления
+                            наркотических средств, организация незаконных свалок и т.п.</p>
+                        <p>Дистанционные методы контроля состояния и динамики водной поверхности,
+                          определение и изучение загрязнений водной поверхности, в том числе углеводородные
+                          загрязнения водных поверхностей.</p>
+                        <p>определение разлива нефти или утечки газа в местах повреждения обваловки и засыпки трубопроводов,
+                         определение и локализация площади рекультивируемых и загрязненных земель.</p>
+                         <h3>Общественная безопасность</h3>
+                         <p>Вокзалы, аэропорты, метро, школы, детские дошкольные учреждения и иные публичные объекты нуждаются
+                           в особой защите от преступных посягательств. Оптическая система с суперсовременным программным
+                            комплексом, включающим самые совершенные и мощные алгоритмы распознавания лиц,
+                             позволяет идентифицировать лиц, находящихся в розыске за совершение преступлений.
+                             Специальная оптико-интеллектуальная система позволяет идентифицировать лиц,
+                                находящихся в розыске, а также скрытно носимое оружие или взрывчатку,
+                                 и таким образом блокировать попытки пронести их в места массового скопления людей:
+                                  школы, детские сады, концертные залы, выставки, театры, торговые центры, стадионы,
+                                   аэропорты, метро и т.п</p>
+                                   <p>Интеллектуальная комплексная оптоэлектронная система,
+                                      помогающая организовать безопасное движение транспортных средств на участках
+                                       с повышенным трафиком.</p>
+                          <p>Измерительный оптоэлектонный комплекс, позволяющий максимально оперативно составлять точную
+                             цифровую копию места и объектов дорожно-транспортного происшествия (ДТП),
+                              что позволяет разрешать спорные вопросы между участниками ДТП, ускоряет процесс составления
+                               карты ДТП (внешние повреждения транспортных средств, их расположение на проезжей части,
+                                тормозной путь, и т.п.) и позволяет сократить время, решает спорные вопросы в суде,
+                                 помогает оформлять документы в страховой компании.</p>
+                            <h3>Перспективные разработки и направления развития:</h3>
+                            <h3>Дизайн одежды, мода, диетология</h3>
+                            <p>3D-сканер тела человека, создающий 3D-модель за 10-15 минут,
+                               включая точные геометрические особенности тела с высочайшей степенью точности.</p>
+              </div>-->
+        <!-- <div class="col-lg-12 col-md-12 visible-lg visible-md" style="margin-top: 120px;">
+           <div class="demo2">
+              <div class="slide2 s1" style="background-image: url(img/med.jpg);">
+                <div class="slider_link">
+                  <span>Медицина</span><br><br>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="slide2 s2" style="background-image: url(img/ferm.jpg);">
+                <div class="slider_link">
+                  <span>Фермерство</span><br><br>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="slide2 s3" style="background-image: url(img/eco.jpg);">
+                <div class="slider_link">
+                  <span>Экологическая<br> безопасность</span><br><br>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="slide2 s4" style="background-image: url(img/mcs.jpg);">
+                <div class="slider_link">
+                  <span>МЧС</span><br><br>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="slide2 s5" style="background-image: url(img/topo.jpg);">
+                <div class="slider_link">
+                  <span>Промышленность и<br> строительство</span><br><br>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="slide2 s6" style="background-image: url(img/face.jpg);">
+                <div class="slider_link">
+                  <span>Общественная<br> безопасность</span><br><br>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              </div>
+             </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_img ms1">
+                      <img src="img/face.jpg">
+                      <span>Медицина</span>
+                      <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_prod">
+                           <a href="#">Подробнее</a>
+                      </div>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_img ms2" style="background-image: url(img/med.jpg);">
+                      <span>Фермерство</span>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_prod">
+                      <a href="#">Подробнее</a>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_img ms3" style="background-image: url(img/eco.jpg);">
+                      <span>Экологическая <br> безопасность</span>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_prod">
+                      <a href="#">Подробнее</a>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_img ms4" style="background-image: url(img/topo.jpg);">
+                      <span>МЧС</span>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_prod">
+                      <a href="#">Подробнее</a>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_img ms5" style="background-image: url(img/mcs.jpg);">
+                      <span>Промышленность <br> и строительство</span>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_prod">
+                      <a href="#">Подробнее</a>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_img ms6" style="background-image: url(img/ferm.jpg);">
+                      <span>Общественная <br> безопасность</span>
+                 </div>
+                 <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 visible-sm visible-xs mob_prod">
+                      <a href="#">Подробнее</a>
+                 </div>-->
+           </div>
+           <div class="row" style="margin: 0;">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+                   <div class="row" style="margin: 0;">
+                      <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 footer_content">
+                         <div class="col-lg-4 col-md-4 visible-lg visible-md desc_foot">
+                             <img src="img/logo.png"><br>
+                             <span>&copy 2018. АО НПК Пеленгатор.</span>
+                         </div>
+                         <div class="col-sm-12 col-xs-12 visible-sm visible-xs mob_foot">
+                             <img src="img/logo.png">
+                             <span>&copy 2018. АО НПК Пеленгатор.</span>
+                         </div>
+                      </div>
+                   </div>
+              </div>
+           </div>
+         </div>
+
+
+ <script type="text/javascript">
+       function view_menu(){
+         if($(document).scrollTop() >= 400){
+           $('.top_menu').addClass('display_menu');
+         }else{
+           $('.top_menu').removeClass('display_menu');
+         }
+       }
+       $(document).ready(function(){
+         $('.demo2').slick({
+           slidesToShow: 3,
+           slidesToScroll: 1,
+           adaptiveHeight: true,
+           autoplay: true,
+         });
+         $('#demo').slick({
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           adaptiveHeight: true,
+           autoplay: true,
+           dots: true,
+           arrows: false,
+           cssEase: 'ease-out'
+         });
+         $('#mob_demo').slick({
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           adaptiveHeight: true,
+           autoplay: true,
+           dots: true,
+           arrows: false,
+           cssEase: 'ease-out'
+         });
+         $(document).scroll(view_menu);
+           var mh = 0;
+           $(".slider_link span").each(function () {
+               var h_block = parseInt($(this).height());
+               if(h_block > mh) {
+              mh = h_block;
+                }
+                $(".slider_link span").height(mh);
+             });
+             $('div').each(function(){
+               if($(this).hasClass('link_about')){
+                 $(".top_menu nav a:nth-child(2)").addClass('active');
+                 $(".desk_menu nav a:nth-child(2)").addClass('active');
+               }
+             });
+       });
+       $(".m_menu_button").on("click", function(){
+         if($('.mobil_menu').hasClass('toggled')){
+           $('.mobil_menu').removeClass('toggled');
+         }else{
+           $('.mobil_menu').addClass('toggled');
+         }
+       });
+
+ </script>
+  </body>
+</html>
